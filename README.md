@@ -18,7 +18,7 @@ Once you're done, package your results however you want and send them to us (Hin
 
 This is an example of a task we recently encountered while working on a feature at Denteo.
 
-Dentists like to keep their daily schedules tighly packed. They start working at 8am and stop working at 6pm, with a 1h lunchbreak from 12am-1pm.
+Dentists like to keep their daily schedules tighly packed. They start working at 08:00 and stop working at 18:00, with a 1h lunchbreak from 12:00-13:00.
 We want to let patients self-select a convenient time for their next dentist appointment, so we first have to figure out all times when the dentist is available.
 Finally, we want to display possible appointment times in convenient 30 minute blocks.
 
@@ -41,10 +41,10 @@ const weeklyAppointments = [
 ];
 
 // FIXME: actual date objects could be useful... (ಠ⌣ಠ)
-const DAY_START = "8am";
-const DAY_END = "18pm";
-const LUNCH_START = "12am";
-const LUNCH_END = "1pm";
+const DAY_START = "08:00";
+const DAY_END = "18:00";
+const LUNCH_START = "12:00";
+const LUNCH_END = "13:00";
 
 // TODO: implement this
 const findFreeTimeslots = () => [];
@@ -52,7 +52,7 @@ const findFreeTimeslots = () => [];
 
 ## Example
 
-Given the dentist has unblocked time from 8am to 9:30am, this would result in 3 possible appointment times for the patient: 8:00am, 8:30am and 9:00am.
+Given the dentist has unblocked time from 08:00 to 09:30, this would result in 3 possible appointment times for the patient: 08:00, 08:30 and 09:00.
 That's it. Your result might be a list in the same/similar shape as `weeklyAppointments`.
 
 ## Outcome
